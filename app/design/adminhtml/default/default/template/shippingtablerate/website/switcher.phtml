@@ -1,0 +1,50 @@
+<?php
+/**
+ * Innoexts
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@innoexts.com so we can send you a copy immediately.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2011 Innoexts (http://www.innoexts.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php $helper = $this->_getHelper(); ?>
+<?php if ($websites = $this->getWebsites()): ?>
+<p class="switcher"><label for="website_switcher"><?php echo $helper->__('Choose Website') ?>:</label>
+<select name="website_switcher" id="website_switcher" onchange="return switchWebsite(this);">
+    <?php if ($this->hasDefaultOption()): ?>
+    <option value=""><?php echo $this->getDefaultWebsiteName() ?></option>
+    <?php endif; ?>
+    <?php foreach ($websites as $website): ?>
+    <option value="<?php echo $website->getId() ?>"<?php if($this->getWebsiteId() == $website->getId()): ?> selected="selected"<?php endif; ?>><?php echo $website->getName() ?></option>
+    <?php endforeach; ?>
+</select>
+</p>
+<script type="text/javascript">
+    function switchWebsite(obj){
+        var websiteParam = obj.value ? 'website/' + obj.value + '/' : '';
+        if (obj.switchParams) websiteParam += obj.switchParams;
+        <?php if ($this->getUseConfirm()) : ?>
+        if (confirm("<?php echo $helper->__('Please confirm website switching. All data that hasn\'t been saved will be lost.') ?>")) {
+            setLocation('<?php echo $this->getSwitchUrl() ?>' + websiteParam);
+            return true;
+        } else {
+            obj.value = '<?php echo $this->getStoreId() ?>';
+        }
+        return false;
+        <?php else: ?>
+        setLocation('<?php echo $this->getSwitchUrl() ?>' + websiteParam);
+        <?php endif; ?>
+    }
+</script>
+<?php endif; ?>
