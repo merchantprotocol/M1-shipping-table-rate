@@ -1,0 +1,7 @@
+app/code/local/Innoexts/ShippingTablerate/ app/code/local/Innoexts/ShippingTablerate/
+app/design/adminhtml/default/default/layout/shippingtablerate.xml app/design/adminhtml/default/default/layout/shippingtablerate.xml
+app/design/adminhtml/default/default/template/shippingtablerate/ app/design/adminhtml/default/default/template/shippingtablerate/
+app/etc/modules/Innoexts_ShippingTablerate.xml app/etc/modules/Innoexts_ShippingTablerate.xml
+app/locale/en_US/Innoexts_ShippingTablerate.csv app/locale/en_US/Innoexts_ShippingTablerate.csv
+skin/adminhtml/default/default/images/shippingtablerate/ skin/adminhtml/default/default/images/shippingtablerate/
+skin/adminhtml/default/default/shippingtablerate/ skin/adminhtml/default/default/shippingtablerate/
