@@ -1,7 +1,9 @@
 #!/bin/bash
 
-CONFIG_FILE="./app/etc/local.xml"
-INDEXER_FILE="shell/indexer.php"
+CWD="$(pwd)/../../.."
+
+CONFIG_FILE="$CWD/app/etc/local.xml"
+INDEXER_FILE="$CWD/shell/indexer.php"
 
 PHP_BIN=`which php`
 
@@ -11,8 +13,6 @@ read UNINSTALL
 
 if [ "$UNINSTALL" == "y" ]; then
 
-	CWD=$(pwd)
-	
 	rm -fr $CWD/app/code/local/Innoexts/ShippingTablerate
 	rm -f $CWD/app/design/adminhtml/default/default/layout/shippingtablerate.xml
 	rm -fr $CWD/app/design/adminhtml/default/default/template/shippingtablerate/
