@@ -1,6 +1,6 @@
-# Magento v1x New Extension Configuration
+# Magento v1x Shipping Table Rates
 
-Drop this into each new extension repository to provide it with all of the files necessary for users. This repository shall contain licensing information, general installation and uninstallation notes necessary for the user.
+This extension makes it possible to create and manage multiple table rates.
 
 ## Version Control
 
@@ -53,6 +53,22 @@ Author||Version
 --- | --- | ---
 **Jonathon Byrd** | jonathon@merchantprotocol.com | `1.0.0.0`
 
-## License
+## NOTICE OF LICENSE
 
-All code is protected and belongs to **Merchant Protocol**.
+	This source file is subject to the Merchant Protocol Commercial License (MPCL 1.0)
+	that is bundled with this package in the file LICENSE.md.
+	It is also available through the world-wide-web at this URL:
+	https://merchantprotocol.com/commercial-license/
+	If you did not receive a copy of the license and are unable to
+	obtain it through the world-wide-web, please send an email
+	to info@merchantprotocol.com so we can send you a copy immediately.
+        
+	DISCLAIMER
+        
+	Do not edit or add to this file if you wish to upgrade to newer
+	versions in the future. If you wish to customize the extension for your
+	needs please refer to http://www.merchantprotocol.com for more information.
+	
+	Copyright (c) 2006-2016 Merchant Protocol LLC. and affiliates (https://merchantprotocol.com/)
+	https://merchantprotocol.com/commercial-license/  Merchant Protocol Commercial License (MPCL 1.0)
+	
