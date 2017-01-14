@@ -2,7 +2,14 @@
 
 ## [Unreleased](https://github.com/merchantprotocol/M1-shipping-table-rate/tree/HEAD)
 
-[Full Changelog](https://github.com/merchantprotocol/M1-shipping-table-rate/compare/1.0.2...HEAD)
+[Full Changelog](https://github.com/merchantprotocol/M1-shipping-table-rate/compare/1.0.2+build.2...HEAD)
+
+**Merged pull requests:**
+
+- Travis Build script [\#8](https://github.com/merchantprotocol/M1-shipping-table-rate/pull/8) ([alancarvalho](https://github.com/alancarvalho))
+
+## [1.0.2+build.2](https://github.com/merchantprotocol/M1-shipping-table-rate/tree/1.0.2+build.2) (2017-01-14)
+[Full Changelog](https://github.com/merchantprotocol/M1-shipping-table-rate/compare/1.0.2...1.0.2+build.2)
 
 **Closed issues:**
 
